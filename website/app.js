@@ -39,7 +39,7 @@ button.addEventListener("click", function(){
       if(data.message!=="city not found"){
       try{
           //this is used to return the data from the function
-          console.log(data);
+          //console.log(data);
           return data;
       }
       catch(e){
@@ -54,7 +54,7 @@ button.addEventListener("click", function(){
 };
     //this is the function that sends the data obtained from the fetch to the POST route
     const postData=async function(url='', data={}){
-        console.log(data);
+        //console.log(data);
         //this is used to send the data to a certain url (/weather) using method post and same-origin credentials and the application is of type json
         const response= await fetch(url,{
             method: 'POST',
@@ -68,7 +68,7 @@ button.addEventListener("click", function(){
         try{
             //this is used to get the data sent to the post route
             const newData=await response.json();
-            console.log(newData);
+            //console.log(newData);
             return newData;
         }
         catch(e){
@@ -81,7 +81,7 @@ button.addEventListener("click", function(){
         const req=await fetch('/all');
         try{
             const allData=await req.json();
-            console.log(allData);
+            //console.log(allData);
             document.querySelector('#date').innerHTML=allData.date;
             document.querySelector('#temp').innerHTML=allData.temp;
             document.querySelector('#content').innerHTML=allData.feelings;
