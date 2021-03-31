@@ -5,7 +5,7 @@
 
 //Declare the baseURL and the personal apiKey code
 let baseURL="http://api.openweathermap.org/data/2.5/weather?zip=";
-let apiKey="&appid=0a911fb439f2112c67d041eae8382b14";
+const apiKey="&appid=0a911fb439f2112c67d041eae8382b14";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
